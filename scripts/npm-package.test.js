@@ -25,8 +25,9 @@ test("contains expected icons", () => {
  */
 test("contains expected properties", () => {
     const props = ["title", "hex", "source", "svg"];
-    Object.values(simpleIcons).forEach(
-        icon => {
+    Object.keys(simpleIcons).forEach(
+        key => {
+            const icon = simpleIcons[key];
             props.forEach(prop => {
                 expect(icon).toHaveProperty(prop);
                 expect(icon[prop]).toBeTruthy();
