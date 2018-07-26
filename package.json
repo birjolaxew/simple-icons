@@ -18,9 +18,11 @@
   "author": "Simple Icons Collaborators",
   "license": "CC0",
   "devDependencies": {
+    "jest": "^23.4.1",
     "jsonlint2": "^1.7.1"
   },
   "scripts": {
-    "jsonlint": "jsonlint _data/simple-icons.json -q -V .jsonlintschema"
+    "jsonlint": "jsonlint _data/simple-icons.json -q -V .jsonlintschema",
+    "test": "jest"
   }
 }
